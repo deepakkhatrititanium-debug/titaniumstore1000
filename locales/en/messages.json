@@ -1,0 +1,13 @@
+{
+  "auth": {
+    "user_exists": "User already exists",
+    "user_exists_details": "A user with this email is already registered",
+    "registration_success": "User registered successfully",
+    "validation": {
+      "name_required": "Name is required",
+      "email_required": "Please include a valid email",
+      "password_length": "Please enter a password with 6 or more characters"
+    },
+    "server_error": "Server error"
+  }
+}
