@@ -1,0 +1,40 @@
+{
+  "server": {
+    "port": 8080,
+    "environment": "development",
+    "defaultLanguage": "en",
+    "api": {
+      "basePath": "/api/v1",
+      "version": "1.0.0"
+    },
+    "cors": {
+      "enabled": true,
+      "allowedOrigins": ["http://localhost:3000"]
+    },
+    "security": {
+      "jwtSecret": "your_jwt_secret_key_here",
+      "passwordSaltRounds": 10
+    },
+    "database": {
+      "url": "mongodb://localhost:27017/titaniumstore",
+      "options": {
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true
+      }
+    },
+    "rateLimit": {
+      "windowMs": 900000,
+      "max": 100
+    },
+    "logs": {
+      "level": "debug",
+      "directory": "./logs"
+    }
+  },
+  "languages": ["en", "hi"],
+  "features": {
+    "registration": true,
+    "emailVerification": false,
+    "forgotPassword": false
+  }
+}
